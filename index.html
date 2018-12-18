@@ -1,177 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		<meta name="author" content="">
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>DEC Pharmacy</title>
-		<!-- Bootstrap core CSS-->
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom fonts for this template-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-		<!-- Custom styles for this template-->
-		<link href="css/grayscale.min.css" rel="stylesheet">
+		<link rel="icon" href="img/favico.png"/>
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+		<link href="css/grayscale.min.css" rel="stylesheet"/>
 	</head>
-	<body id="page-top">
-		<!-- Navigation-->
+	<body>
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-			<div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" width="80" alt=""></a>
+			<div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" width="80" alt=""/></a>
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto">
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About US</a></li>
+						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Services</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="services.html">All Services</a>
+								<div class="dropdown-divider"></div><a class="dropdown-item" href="new-prescriptions.html">New Prescritions</a><a class="dropdown-item" href="refill-prescriptions.html">Refill Prescritions</a><a class="dropdown-item" href="transfer-prescriptions.html">Transfer Prescritions</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="faq.html">Faq</a></li>
+						<li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact US</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- Header-->
-		<header class="masthead">
-			<div class="container d-flex h-100 align-items-center">
-				<div class="mx-auto text-center">
-					<h1 class="mx-auto my-0 text-uppercase">DEC Pharmacy</h1>
-					<h2 class="text-white-50 mx-auto mt-2 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia rem nihil debitis, ipsum magni facere.</h2><a class="btn btn-primary js-scroll-trigger" href="#about">More</a>
+		<div class="carousel fade-carousel slide" id="carousel-test" data-ride="carousel">
+			<!-- Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-target="#carousel-test" data-slide-to="0"></li>
+				<li data-target="#carousel-test" data-slide-to="1"></li>
+				<li data-target="#carousel-test" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="overlay"></div>
+					<div class="fill"><img src="img/banners/bg-home.jpg" alt="Testimony-1"/>
+						<div class="carousel-caption">
+							<div class="hero">
+								<h3 class="text-uppercase animated bounceInDown delay-1s">DEC Pharmacy</h3>
+								<p class="animated fadeInRight delay-2s">Never forget to take your medications with DEC Medication Reminders get reminders when it’s time to refill your medications again. Refill any time 24/7 without making a call.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="overlay"></div>
+					<div class="fill"><img src="img/banners/bg-home.jpg" alt="Testimony-2"/>
+						<div class="carousel-caption">
+							<div class="hero">
+								<h3 class="text-uppercase text-uppercase animated fadeInLeft delay-1s">DEC Pharmacy</h3>
+								<p class="animated bounceInUp delay-2s">Save up to $450 with valuable Co-Pay Coupons.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="overlay"></div>
+					<div class="fill"><img src="img/banners/bg-home.jpg" alt="Testimony-3"/>
+						<div class="carousel-caption">
+							<div class="hero">
+								<h3 class="text-uppercase text-uppercase animated fadeInLeft delay-1s">DEC Pharmacy</h3>
+								<p class="animated fadeInRight delay-2s">Find important news and info about your medications and health conditions, quickly access directions, store hours and our phone number.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</header>
-		<!-- About Section-->
+		</div>
 		<section class="about-section text-center">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-8 mx-auto">
-						<h2 class="text-white mb-4">Experience</h2>
-						<p class="text-white-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, a distinctio? Iure illo nisi voluptas corrupti, esse quae ea officia?<a href="#">	DEC Pharmacy </a>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, beatae?</p>
+						<h2 class="title-lg text-primary mb-4">Experience</h2>
+						<p class="text-white-50">Here at DCE Pharmacy we are a local institution, providing a familiar face and the utmost quality care. Our customers have come to expect the highest standard in service, and our pharmacists are always prepared to raise the challenge.<a href="#">	DEC Pharmacy</a>We are always innovating new ways to better serve you, the customer, which is why we welcome questions, comments and critiques. The DCE Pharmacy staff is patient and eager to help, so stop in and put our expertise to the test.</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="projects-section bg-light" id="about">
+		<section class="projects-section bg-light">
 			<div class="container">
-				<!-- Featured Project Row-->
 				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/banners/bg-about.jpg" alt=""></div>
+					<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="img/banners/bg-about.jpg" alt=""/></div>
 					<div class="col-xl-4 col-lg-5">
 						<div class="featured-text text-center text-lg-left">
-							<h4>DEC Pharmacy</h4>
-							<p class="text-black-50 mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci vitae magni perferendis saepe provident dignissimos a enim molestiae sed dolorum?<a href="#">	More</a></p>
+							<h4 class="text-primary">DEC Pharmacy</h4>
+							<p class="text-black-50 mb-0">Our expert staff is led by our very own pharmacist. If a staff member can’t answer your question, we have a whole team prepared to help. We have been able to build relationships with our customers over the years, to build a brand you can trust.<a href="about.html">	More</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Projects Section-->
-		<section class="projects-section bg-light" id="services">
-			<div class="container">
-				<!-- Services One Row-->
-				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-					<div class="col-lg-6"><img class="img-fluid" src="img/services/new-prescription.jpg" alt=""></div>
-					<div class="col-lg-6">
-						<div class="bg-black text-center h-100 project">
-							<div class="d-flex h-100">
-								<div class="project-text w-100 my-auto text-center text-lg-left">
-									<h4 class="text-white">New Prescription</h4>
-									<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis non nostrum esse error officia fugiat debitis quo quasi, cupiditate quisquam?<a href="#">	Read More</a></p>
-									<hr class="d-none d-lg-block mb-0 ml-0">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Services Two Row-->
-				<div class="row justify-content-center no-gutters">
-					<div class="col-lg-6"><img class="img-fluid" src="img/services/refill-prescription.jpg" alt=""></div>
-					<div class="col-lg-6 order-lg-first">
-						<div class="bg-black text-center h-100 project">
-							<div class="d-flex h-100">
-								<div class="project-text w-100 my-auto text-center text-lg-right">
-									<h4 class="text-white">Refill Prescription</h4>
-									<p class="mb-0 text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatem explicabo provident quam consequuntur saepe magnam repellat quae quidem vel. Mollitia eius illo fugit reprehenderit error reiciendis, aliquam molestiae ipsum.<a href="#">	Read More</a></p>
-									<hr class="d-none d-lg-block mb-0 mr-0">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Services tree Row-->
-				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-					<div class="col-lg-6"><img class="img-fluid" src="img/services/transfer-prescription.jpg" alt=""></div>
-					<div class="col-lg-6">
-						<div class="bg-black text-center h-100 project">
-							<div class="d-flex h-100">
-								<div class="project-text w-100 my-auto text-center text-lg-left">
-									<h4 class="text-white">Transfer Prescriptionty</h4>
-									<p class="mb-0 text-white-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil repellat voluptatibus, consequatur quod illo autem fugit vel quaerat fuga voluptatum?<a href="#">	Read More</a></p>
-									<hr class="d-none d-lg-block mb-0 ml-0">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Signup Section-->
-		<section class="signup-section" id="signup">
+		<section class="projects-section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-lg-8 mx-auto text-center"><i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-						<h2 class="text-white mb-5">Subscribe to receive News</h2>
-						<form class="form-inline d-flex">
-							<input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address...">
-							<button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+					<div class="col-lg-12">
+						<h2 class="title-lg text-primary text-center mb-5">Our Services</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+					<div class="col-lg-6"><img class="img-fluid" src="img/services/new-prescription.jpg" alt=""/></div>
+					<div class="col-lg-6">
+						<div class="bg-primary-lg text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-left">
+									<h4 class="title-sm text-white">New Prescription</h4>
+									<p class="mb-0 text-primary text-justify">To start your new medication please fill out the form below, we will respond immediately or feel free to contact our pharmacist at any time at Local Number (281) 528-0288</p>
+									<hr class="d-none d-lg-block mb-0 ml-0"/><a class="float-right" href="new-prescriptions.html">	Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center no-gutters">
+					<div class="col-lg-6"><img class="img-fluid" src="img/services/refill-prescription.jpg" alt=""/></div>
+					<div class="col-lg-6 order-lg-first">
+						<div class="bg-primary-lg text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-right">
+									<h4 class="title-sm text-white"> Refill Prescription</h4>
+									<p class="mb-0 text-primary text-justify">Refilling your prescription should be easy and with us it is, please fill out the form below, we will respond immediately or feel free to contact our pharmacist at any time at Local Number (281) 528-0288</p>
+									<hr class="d-none d-lg-block mb-0 mr-0"/><a class="float-left" href="refill-prescriptions.html">	Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+					<div class="col-lg-6"><img class="img-fluid" src="img/services/transfer-prescription.jpg" alt=""/></div>
+					<div class="col-lg-6">
+						<div class="bg-primary-lg text-center h-100 project">
+							<div class="d-flex h-100">
+								<div class="project-text w-100 my-auto text-center text-lg-left">
+									<h4 class="title-sm text-white">Transfer Prescription</h4>
+									<p class="mb-0 text-primary text-justify">Join our family Pharmacy, it’s simple. Please fill out the form below, we will respond immediately or feel free to contact our pharmacist at any time at Local Number (281) 528-0288</p>
+									<hr class="d-none d-lg-block mb-0 ml-0"/><a class="float-right" href="transfer-prescriptions.html">	Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="signup-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-lg-8 mx-auto text-center"><i class="icon-mail fa-2x mb-2 text-white"></i>
+						<h2 class="text-white mb-5">Contact to us</h2>
+						<form>
+							<div class="row">
+								<div class="col-6 mt-4">
+									<input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Name"/>
+								</div>
+								<div class="col-6 mt-4">
+									<input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Phone"/>
+								</div>
+								<div class="col-12 mt-4">
+									<input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Email"/>
+								</div>
+							</div>
+							<button class="btn btn-primary mx-auto mt-5" type="submit">Submit</button>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- Contact Section-->
-		<section class="contact-section bg-black">
+		<section class="contact-section bg-gray">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mb-3 mb-md-0">
 						<div class="card py-4 h-100">
-							<div class="card-body text-center"><i class="fas fa-map-marked-alt text-primary mb-2"></i>
+							<div class="card-body text-center"><i class="icon-map text-primary mb-2"></i>
 								<h4 class="text-uppercase m-0">Address</h4>
-								<hr class="my-4">
-								<div class="small text-black-50">4923 Market Street, Orlando FL</div>
+								<hr class="my-4"/>
+								<div class="small text-black-50">2540 fm 2920, Suite G Spring, TX, 77388</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 mb-3 mb-md-0">
 						<div class="card py-4 h-100">
-							<div class="card-body text-center"><i class="fas fa-envelope text-primary mb-2"></i>
+							<div class="card-body text-center"><i class="icon-mail text-primary mb-2"></i>
 								<h4 class="text-uppercase m-0">Email</h4>
-								<hr class="my-4">
-								<div class="small text-black-50"><a href="#">hello@yourdomain.com</a></div>
+								<hr class="my-4"/>
+								<div class="small text-black-50"><a href="#">info@decpharmacy.com</a></div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 mb-3 mb-md-0">
 						<div class="card py-4 h-100">
-							<div class="card-body text-center"><i class="fas fa-mobile-alt text-primary mb-2"></i>
+							<div class="card-body text-center"><i class="icon-tablet text-primary mb-2"></i>
 								<h4 class="text-uppercase m-0">Phone</h4>
-								<hr class="my-4">
-								<div class="small text-black-50">+1 (555) 902-8832</div>
+								<hr class="my-4"/>
+								<div class="small text-black-50">(281) 5280288 | Fax 855 327 4829</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="social d-flex justify-content-center"><a class="mx-2" href="#"><i class="fab fa-twitter"></i></a><a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a><a class="mx-2" href="#"><i class="fab fa-instagram"></i></i></a></div>
 			</div>
 		</section>
-		<!-- Footer-->
-		<footer class="bg-black small text-center text-white-50">
-			<div class="container">Copyright © Your Website 2018</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8">
+						<p class="text-center">&copy; 2018 all rights reserved by DEC Pharmacy</p>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-lg-6">
+								<p class="link"><a href="privacy-policy.html">Privacy Policy</a></p>
+							</div>
+							<div class="col-lg-6">
+								<p class="link"><a href="faq.html">Faq</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mt-2"></div>
+			</div>
 		</footer>
-		<!-- Bootstrap core JavaScript-->
 		<script src="vendor/jquery/jquery.min.js"></script>
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<!-- Plugin JavaScript-->
 		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-		<!-- Custom scripts for this template-->
 		<script src="js/grayscale.min.js"></script>
 	</body>
 </html>
